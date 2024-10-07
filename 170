@@ -1,0 +1,26 @@
+#include <iostream>
+#include <forward_list>
+#include <stdio.h>
+
+
+void reverse(std::forward_list<int> list5){
+
+    list5.reverse();
+    
+        
+    std::cout << "Forward_list elements: ";
+    for (const auto& num : list5) {
+    std::cout << num << " ";
+    }
+    std::cout << std::endl;
+
+    
+
+}
+
+
+int main()
+{
+
+    reverse({ 1,2,3,4,5 });
+}
